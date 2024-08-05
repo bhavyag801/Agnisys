@@ -1,0 +1,94 @@
+.navbar {
+  width: 100%; /* Ensure the navbar takes the full width of its container */
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between; /* Space between the two main flex containers */
+  align-items: center; /* Align items horizontally */
+  background-color: white;
+  height: 70px;
+  margin-top: -20px;
+}
+
+.logo-heading-container {
+  display: flex;
+  align-items: center; /* Align logo and heading vertically */
+}
+
+.logo {
+  width: 110px; /* Adjust size as needed */
+  height: 120px;
+  margin-right: 10px; /* Add a small margin to create space between the logo and heading */
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start;
+  margin-bottom: -40px; /* Align items to the start */
+}
+
+.heading-container h2 {
+  margin: 0; /* Remove any default margin */
+  color: #f26523;
+  font-size: 4.5rem; /* Increase the font size as needed */
+  font-weight: 700; /* Adjust font weight */
+}
+
+.small-text {
+  margin: 0; /* Remove any default margin */
+  color: #555; /* Set color for the small text */
+  font-size: 1rem;
+  padding-bottom: 20px; /* Set size for the small text */
+}
+
+.button-subnav-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Align items to the center */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; 
+  margin-top:50px;
+  margin-right: 50px;/* Space below the buttons */
+}
+
+.button-container button {
+  margin-left: 1rem; /* Space between buttons */
+  padding: 0.7rem 1.5rem; /* Increased padding to make buttons larger */
+  font-size: 1.1rem; /* Increased font size */
+  font-weight: bold; /* Make text bold */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.login-button {
+  background-color: #f26523;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.get-started-button {
+  background-color: white;
+  color: #f26523;
+  padding: 0.7rem 1.5rem; /* Ensure proper padding */
+  height: 40px; /* Ensure consistent height */
+  border-radius: 8px;
+  border: 2px solid #f26523;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: #f26523;
+  border: 2px solid #f26523; /* Darker shade of orange */
+}
+
+.get-started-button:hover {
+  background-color: #f26523; /* Orange */
+  color: white; /* Text color */
+}
+
+/* Sub-navbar styles */

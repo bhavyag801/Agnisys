@@ -1,0 +1,59 @@
+.small-navbar {
+    display: flex;
+    justify-content: space-around; /* Center content horizontally with space around */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f26523; /* Dark background color */
+    color: white; /* White text color */
+     /* Slight shadow for depth */
+    height: 30px;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Take remaining space */
+    max-width: 500px; /* Max width for search bar */
+    margin: 0 10px; /* Margin between icons and search bar */
+  background-color: #FFBE6D;
+    padding-right: 10px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .search-bar {
+    width: 100%; /* Full width of parent container */
+    padding: 8px;
+    margin-right: 10px;
+    border: transparent;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    
+    outline: none; /* Remove input outline */  /* Darker shade of orange */
+  background-color: #FFBE6D;
+  }
+  
+  .fa-solid.fa-magnifying-glass {
+    color: white; /* Example icon color */
+  }
+  
+  .fa-solid.fa-user {
+    margin-left: 10px; /* Example spacing between icons */
+    color: white; /* Example icon color */
+  }
+  
+
+  .search-bar::placeholder {
+    /* Placeholder styling */
+    color: whitesmoke; 
+  }

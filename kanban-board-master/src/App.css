@@ -1,0 +1,115 @@
+/* App.css */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f26523;
+  transition: all 350ms;
+}
+
+.Navbar {
+  z-index: 10; /* Ensure Navbar stays on top */
+}
+
+.SmallNavbar {
+  z-index: 9; /* Ensure SmallNavbar is below Navbar but above main content */
+}
+
+.main-layout {
+  display: flex;
+  height: 100%;
+}
+
+.organization-page-selector {
+  flex: 1; /* Make it flexible */
+  max-width: 20%; /* Ensure it does not exceed 1/3rd of the width */
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Add a border to separate the sections */
+   /* Add scroll for overflow content */
+}
+
+.main-content-container {
+  flex: 4; /* Make it take 2/3rd of the space */
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Adjust padding as needed */
+  overflow: auto; /* Enable scrolling if content overflows */
+  margin-right: 20px;
+  background-color: white;
+  margin-bottom: 8px;
+  border-top-right-radius: 10px ;
+  border-bottom-right-radius: 10px; /* Add right margin */
+}
+
+.app_outer {
+  flex: 1;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.app_boards {
+  margin-top: 20px;
+  min-width: fit-content;
+  display: flex;
+  gap: 30px;
+  padding-inline: 2rem;
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(195, 195, 195);
+}
+
+.add__board > textarea {
+  border: 0.5px solid rgb(167, 167, 167) !important;
+  height: 2rem !important;
+}
+
+.card_detail > textarea {
+  border: 0.5px solid rgb(167, 167, 167) !important;
+}
+
+.card__values > p {
+  background: #ccc !important;
+}
+
+.cardinfo__editable {
+  width: fit-content;
+}
+
+.back-button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
